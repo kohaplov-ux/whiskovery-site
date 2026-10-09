@@ -30,7 +30,7 @@
       <header class="document-header">
         <p class="eyebrow">Privacy · 개인정보</p>
         <h1>Privacy Policy</h1>
-        <p class="effective-date">Effective date: September 22, 2026</p>
+        <p class="effective-date">Effective date: October 9, 2026</p>
         <nav class="language-nav" aria-label="Privacy Policy languages">
           <a href="#english">English</a>
           <a href="#korean" lang="ko">한국어</a>
@@ -45,60 +45,71 @@
 
         <section aria-labelledby="en-overview">
           <h3 id="en-overview">1. Overview</h3>
-          <p>This Privacy Policy explains how the production version of Whiskovery v1.0 handles information. Whiskovery is a local-first personal whisky journal. It does not require a Whiskovery user account, and it does not use Firebase Authentication or Firebase cloud backup in production.</p>
+          <p>Whiskovery is a local-first personal whisky journal. An account is not required: bottles, tastings, photos, and other core journal features continue to work locally and offline. On iPhone, you may optionally use Sign in with Apple and choose to back up journal records to a private cloud backup.</p>
         </section>
 
         <section aria-labelledby="en-local-data">
           <h3 id="en-local-data">2. Information stored on your device</h3>
           <p>Whiskovery stores the following information locally on your device:</p>
           <ul>
-            <li>Bottle, Whisky, Tasting, and Buy List records in SQLite</li>
+            <li>Bottle, Whisky, Tasting, purchase, and Buy List records in SQLite</li>
             <li>Notes and other content you write</li>
             <li>Bottle photos you choose, saved in app-local storage</li>
-            <li>Language, base currency, and other app settings</li>
-            <li>Cached foreign-exchange rate data</li>
+            <li>Language, base currency, drafts, and other app settings</li>
+            <li>Cached foreign-exchange rate data and app-managed backup files</li>
           </ul>
-          <p>Whiskovery v1.0 does not provide a Whiskovery-operated cloud backup service for this data.</p>
+          <p>Your local database remains the live source of truth. Signing in, signing out, a failed network request, or deleting a cloud account does not delete your local journal.</p>
+        </section>
+
+        <section aria-labelledby="en-cloud">
+          <h3 id="en-cloud">3. Optional account and cloud backup</h3>
+          <p>If you choose Sign in with Apple, Firebase Authentication (operated by Google for Whiskovery) processes an Apple user identifier and, only if you share it, your email address, which may be an Apple private-relay address. No account is required for normal use.</p>
+          <p>Cloud backup happens only after you tap Back Up Now. Whiskovery then stores a private, account-linked copy of journal records in Google Cloud Firestore, including Bottle and Whisky data, purchase details, Tastings and free-form notes, Buy List records, and saved coordinates. Bottle photos are not uploaded and remain only on the device. Whiskovery keeps the newest three committed cloud backup versions per account.</p>
+          <p>Cloud restore validates the backup first, creates a local safety backup when needed, and adds only missing records; it does not overwrite existing local records. A restored record that referred to a local photo may appear without that photo on another device.</p>
+        </section>
+
+        <section aria-labelledby="en-local-backup">
+          <h3 id="en-local-backup">4. Local export and import</h3>
+          <p>You can export a JSON backup to a destination you choose. Exported backups contain journal records but not photos. Import validates the file, creates a local safety backup when needed, and adds only missing records without deleting or changing existing records. Copies saved or shared outside Whiskovery remain under your control at the selected destination.</p>
         </section>
 
         <section aria-labelledby="en-location">
-          <h3 id="en-location">3. Optional location information</h3>
-          <p>Whiskovery may record location information when you explicitly use a location feature. Location permission is optional and is not required for normal app use. Any location attached through that feature is part of the app data kept locally on your device.</p>
+          <h3 id="en-location">5. Optional location information</h3>
+          <p>Location permission is optional. When you explicitly request a place suggestion, coordinates may be processed by the operating system's geocoding service under the platform provider's terms. Whiskovery does not operate a location server. If you save coordinates in a journal record and later choose cloud backup, those coordinates are included in that private backup.</p>
         </section>
 
         <section aria-labelledby="en-fx">
-          <h3 id="en-fx">4. Historical currency conversion</h3>
-          <p>Whiskovery uses Frankfurter, which provides European Central Bank reference-rate data, to retrieve historical exchange rates. A rate request contains only:</p>
-          <ul>
-            <li>The requested date</li>
-            <li>The source currency code</li>
-            <li>The target currency code</li>
-          </ul>
-          <p>Whiskovery does not send Bottle names, tasting data, notes, photos, or user identifiers to the exchange-rate provider.</p>
+          <h3 id="en-fx">6. Historical currency conversion</h3>
+          <p>Whiskovery requests historical European Central Bank reference-rate data from Frankfurter. The request includes the requested date and source/target currency codes, plus ordinary network metadata. It does not include a purchase amount, shop, Bottle or Tasting data, notes, photos, location, or a Whiskovery user identifier.</p>
+        </section>
+
+        <section aria-labelledby="en-drafting">
+          <h3 id="en-drafting">7. Optional on-device tasting-note draft</h3>
+          <p>After you explicitly tap Draft from tasting details, supported Apple devices may use Apple's on-device Foundation Models to create a preview from selected structured tasting details. Whiskovery does not send your free-form note, photo, location, prices, account identifier, or database to a Whiskovery or third-party cloud AI service. If the on-device model is unavailable, Whiskovery uses a deterministic offline fallback. A draft changes your note only after you explicitly choose Replace note.</p>
         </section>
 
         <section aria-labelledby="en-tracking">
-          <h3 id="en-tracking">5. Advertising, analytics, and diagnostics</h3>
-          <p>Whiskovery v1.0 contains no advertising and performs no behavioral tracking. The production app currently uses no analytics SDK and no crash-reporting SDK.</p>
+          <h3 id="en-tracking">8. Advertising, analytics, and diagnostics</h3>
+          <p>Whiskovery contains no advertising and performs no behavioral tracking. The production app does not use Firebase Analytics, Firebase Storage, Crashlytics, an advertising SDK, or a remote AI provider.</p>
         </section>
 
         <section aria-labelledby="en-deletion">
-          <h3 id="en-deletion">6. Data deletion</h3>
-          <p>You can remove individual records through the app where deletion is supported. Uninstalling the app generally removes app-local data, subject to the backup and restore behavior of your operating system or device.</p>
+          <h3 id="en-deletion">9. Data deletion</h3>
+          <p>You can delete supported individual records in the app. Delete Local Device Data removes app-managed records, photos, drafts, preferences, and local backup files from that device; it does not delete a cloud account. Delete Cloud Account deletes the Firebase account and its cloud backups and requests revocation of the Apple sign-in connection; it keeps local device data. Copies you exported outside Whiskovery must be deleted at the destination where you saved them. Uninstalling the app generally removes app-local data, subject to operating-system backup behavior.</p>
+        </section>
+
+        <section aria-labelledby="en-providers">
+          <h3 id="en-providers">10. Service providers and platform services</h3>
+          <p>Optional cloud account and backup use Apple Sign in with Apple and Google Firebase Authentication/Cloud Firestore. Optional currency lookup uses Frankfurter. Optional place suggestions use platform geocoding. App distribution and operating-system backup or diagnostics may be handled separately by Apple under its terms and settings.</p>
         </section>
 
         <section aria-labelledby="en-children">
-          <h3 id="en-children">7. Children</h3>
+          <h3 id="en-children">11. Children</h3>
           <p>Whiskovery concerns whisky and is not designed for or marketed to children.</p>
         </section>
 
-        <section aria-labelledby="en-platforms">
-          <h3 id="en-platforms">8. Platform services</h3>
-          <p>This policy describes Whiskovery’s own app behavior. Your device operating system, app store, and device backup services may operate separately under their providers’ policies and settings.</p>
-        </section>
-
         <section aria-labelledby="en-contact">
-          <h3 id="en-contact">9. Contact</h3>
+          <h3 id="en-contact">12. Contact</h3>
           <p>For privacy questions, email <a href="mailto:kohaplov@gmail.com">kohaplov@gmail.com</a> or visit <a href="../support/">Whiskovery Support</a>.</p>
         </section>
       </article>
@@ -111,60 +122,71 @@
 
         <section aria-labelledby="ko-overview">
           <h3 id="ko-overview">1. 개요</h3>
-          <p>이 개인정보 처리방침은 Whiskovery v1.0 정식 버전이 정보를 처리하는 방식을 설명합니다. Whiskovery는 로컬 우선 방식의 개인 위스키 저널입니다. Whiskovery 사용자 계정이 필요하지 않으며, 정식 버전에서는 Firebase Authentication 또는 Firebase 클라우드 백업을 사용하지 않습니다.</p>
+          <p>Whiskovery는 로컬 우선 방식의 개인 위스키 저널입니다. 계정은 필수가 아니며, 병·시음·사진을 포함한 핵심 저널 기능은 기기에서 로컬로 작동하고 오프라인에서도 사용할 수 있습니다. iPhone에서는 선택적으로 Apple로 로그인하고 저널 기록을 비공개 클라우드 백업에 저장할 수 있습니다.</p>
         </section>
 
         <section aria-labelledby="ko-local-data">
           <h3 id="ko-local-data">2. 기기에 저장되는 정보</h3>
           <p>Whiskovery는 다음 정보를 사용자의 기기에 로컬로 저장합니다.</p>
           <ul>
-            <li>SQLite에 저장되는 보틀, 위스키, 테이스팅 및 구매 목록 기록</li>
+            <li>SQLite에 저장되는 병, 위스키, 시음, 구매 및 구매 목록 기록</li>
             <li>사용자가 작성한 메모와 기타 콘텐츠</li>
-            <li>사용자가 선택하고 앱 전용 저장 공간에 보관되는 보틀 사진</li>
-            <li>언어, 기준 통화 및 기타 앱 설정</li>
-            <li>캐시된 환율 데이터</li>
+            <li>사용자가 선택하고 앱 전용 저장 공간에 보관되는 병 사진</li>
+            <li>언어, 기준 통화, 임시 저장 내용 및 기타 앱 설정</li>
+            <li>캐시된 환율 데이터와 앱이 관리하는 백업 파일</li>
           </ul>
-          <p>Whiskovery v1.0은 이러한 데이터를 위한 Whiskovery 운영 클라우드 백업 서비스를 제공하지 않습니다.</p>
+          <p>로컬 데이터베이스가 실제 앱 동작의 기준입니다. 로그인, 로그아웃, 네트워크 요청 실패 또는 클라우드 계정 삭제로 로컬 저널이 삭제되지 않습니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-cloud">
+          <h3 id="ko-cloud">3. 선택적 계정 및 클라우드 백업</h3>
+          <p>사용자가 Apple로 로그인을 선택하면 Whiskovery를 위해 Google이 운영하는 Firebase Authentication이 Apple 사용자 식별자와, 사용자가 공유한 경우에만 이메일 주소(Apple 비공개 릴레이 주소일 수 있음)를 처리합니다. 일반적인 앱 사용에는 계정이 필요하지 않습니다.</p>
+          <p>클라우드 백업은 사용자가 지금 백업을 누른 경우에만 실행됩니다. 이때 병·위스키 정보, 구매 정보, 자유 형식 메모를 포함한 시음 기록, 구매 목록 및 저장된 좌표 등 저널 기록의 사본이 계정에 연결된 비공개 Google Cloud Firestore 백업에 저장됩니다. 병 사진은 업로드되지 않고 기기에만 남습니다. 계정별로 가장 최근에 완료된 클라우드 백업 3개를 보관합니다.</p>
+          <p>클라우드 복원은 먼저 백업을 검증하고, 필요한 경우 로컬 안전 백업을 만든 다음 없는 기록만 추가합니다. 기존 로컬 기록을 덮어쓰지 않습니다. 로컬 사진을 참조하던 기록은 다른 기기에서 사진 없이 표시될 수 있습니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-local-backup">
+          <h3 id="ko-local-backup">4. 로컬 내보내기 및 가져오기</h3>
+          <p>사용자가 선택한 위치로 JSON 백업을 내보낼 수 있습니다. 내보낸 백업에는 저널 기록이 포함되지만 사진은 포함되지 않습니다. 가져오기는 파일을 검증하고, 필요한 경우 로컬 안전 백업을 만든 뒤 기존 기록을 삭제하거나 변경하지 않고 없는 기록만 추가합니다. Whiskovery 밖으로 저장하거나 공유한 사본은 사용자가 선택한 저장 위치에서 직접 관리해야 합니다.</p>
         </section>
 
         <section aria-labelledby="ko-location">
-          <h3 id="ko-location">3. 선택적 위치 정보</h3>
-          <p>사용자가 위치 기능을 명시적으로 사용할 때 Whiskovery가 위치 정보를 기록할 수 있습니다. 위치 권한은 선택 사항이며 일반적인 앱 사용에 필요하지 않습니다. 해당 기능을 통해 추가한 위치는 기기에 로컬로 보관되는 앱 데이터의 일부입니다.</p>
+          <h3 id="ko-location">5. 선택적 위치 정보</h3>
+          <p>위치 권한은 선택 사항입니다. 사용자가 장소 추천을 명시적으로 요청하면 운영체제의 지오코딩 서비스가 해당 플랫폼 제공자의 약관에 따라 좌표를 처리할 수 있습니다. Whiskovery는 위치 서버를 운영하지 않습니다. 저널 기록에 좌표를 저장한 뒤 클라우드 백업을 선택하면 해당 좌표도 비공개 백업에 포함됩니다.</p>
         </section>
 
         <section aria-labelledby="ko-fx">
-          <h3 id="ko-fx">4. 과거 환율 변환</h3>
-          <p>Whiskovery는 유럽중앙은행(ECB) 기준 환율 데이터를 제공하는 Frankfurter를 통해 과거 환율을 조회합니다. 환율 요청에는 다음 정보만 포함됩니다.</p>
-          <ul>
-            <li>조회 날짜</li>
-            <li>기준 통화 코드</li>
-            <li>대상 통화 코드</li>
-          </ul>
-          <p>Whiskovery는 보틀 이름, 테이스팅 데이터, 메모, 사진 또는 사용자 식별자를 환율 제공자에게 전송하지 않습니다.</p>
+          <h3 id="ko-fx">6. 과거 환율 변환</h3>
+          <p>Whiskovery는 Frankfurter에서 유럽중앙은행(ECB)의 과거 기준 환율 데이터를 요청합니다. 요청에는 조회 날짜, 기준·대상 통화 코드와 일반적인 네트워크 메타데이터가 포함됩니다. 구매 금액, 상점, 병·시음 데이터, 메모, 사진, 위치 또는 Whiskovery 사용자 식별자는 포함되지 않습니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-drafting">
+          <h3 id="ko-drafting">7. 선택적 기기 내 시음 노트 초안</h3>
+          <p>사용자가 시음 정보로 초안 만들기를 명시적으로 누르면 지원되는 Apple 기기에서 Apple의 기기 내 Foundation Models가 선택한 구조화 시음 정보를 바탕으로 미리보기를 만들 수 있습니다. Whiskovery는 자유 형식 메모, 사진, 위치, 가격, 계정 식별자 또는 데이터베이스를 Whiskovery나 제3자의 클라우드 AI 서비스로 보내지 않습니다. 기기 내 모델을 사용할 수 없으면 결정론적 오프라인 대체 기능을 사용합니다. 사용자가 노트 바꾸기를 명시적으로 선택해야만 초안이 기존 노트를 변경합니다.</p>
         </section>
 
         <section aria-labelledby="ko-tracking">
-          <h3 id="ko-tracking">5. 광고, 분석 및 진단</h3>
-          <p>Whiskovery v1.0에는 광고가 없으며 행동 추적을 하지 않습니다. 현재 정식 버전은 분석 SDK와 충돌 보고 SDK를 사용하지 않습니다.</p>
+          <h3 id="ko-tracking">8. 광고, 분석 및 진단</h3>
+          <p>Whiskovery에는 광고가 없으며 행동 추적을 하지 않습니다. 정식 앱은 Firebase Analytics, Firebase Storage, Crashlytics, 광고 SDK 또는 원격 AI 제공자를 사용하지 않습니다.</p>
         </section>
 
         <section aria-labelledby="ko-deletion">
-          <h3 id="ko-deletion">6. 데이터 삭제</h3>
-          <p>앱에서 삭제를 지원하는 개별 기록은 앱을 통해 삭제할 수 있습니다. 앱을 삭제하면 일반적으로 앱의 로컬 데이터도 삭제되지만, 운영체제 또는 기기의 백업 및 복원 방식에 따라 달라질 수 있습니다.</p>
+          <h3 id="ko-deletion">9. 데이터 삭제</h3>
+          <p>앱에서 삭제를 지원하는 개별 기록을 삭제할 수 있습니다. 로컬 기기 데이터 삭제는 해당 기기의 앱 관리 기록, 사진, 임시 저장 내용, 설정 및 로컬 백업 파일을 삭제하지만 클라우드 계정은 삭제하지 않습니다. 클라우드 계정 삭제는 Firebase 계정과 클라우드 백업을 삭제하고 Apple 로그인 연결 해제를 요청하지만 기기의 로컬 데이터는 유지합니다. Whiskovery 밖으로 내보낸 사본은 저장한 위치에서 사용자가 직접 삭제해야 합니다. 앱을 삭제하면 일반적으로 로컬 앱 데이터도 삭제되지만 운영체제 백업 방식에 따라 달라질 수 있습니다.</p>
+        </section>
+
+        <section aria-labelledby="ko-providers">
+          <h3 id="ko-providers">10. 서비스 제공자 및 플랫폼 서비스</h3>
+          <p>선택적 클라우드 계정과 백업에는 Apple로 로그인 및 Google Firebase Authentication/Cloud Firestore를 사용합니다. 선택적 환율 조회에는 Frankfurter를 사용하고, 선택적 장소 추천에는 플랫폼 지오코딩을 사용합니다. 앱 배포와 운영체제 백업 또는 진단은 Apple이 별도의 약관과 설정에 따라 처리할 수 있습니다.</p>
         </section>
 
         <section aria-labelledby="ko-children">
-          <h3 id="ko-children">7. 아동</h3>
+          <h3 id="ko-children">11. 아동</h3>
           <p>Whiskovery는 위스키 관련 앱으로, 아동을 대상으로 설계되거나 마케팅되지 않습니다.</p>
         </section>
 
-        <section aria-labelledby="ko-platforms">
-          <h3 id="ko-platforms">8. 플랫폼 서비스</h3>
-          <p>이 방침은 Whiskovery 앱 자체의 동작을 설명합니다. 기기의 운영체제, 앱 스토어 및 기기 백업 서비스는 각 제공자의 정책과 설정에 따라 별도로 작동할 수 있습니다.</p>
-        </section>
-
         <section aria-labelledby="ko-contact">
-          <h3 id="ko-contact">9. 문의</h3>
+          <h3 id="ko-contact">12. 문의</h3>
           <p>개인정보 관련 문의는 <a href="mailto:kohaplov@gmail.com">kohaplov@gmail.com</a>으로 이메일을 보내거나 <a href="../support/">Whiskovery 고객지원</a>을 확인해 주세요.</p>
         </section>
       </article>
