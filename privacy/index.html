@@ -45,7 +45,7 @@
 
         <section aria-labelledby="en-overview">
           <h3 id="en-overview">1. Overview</h3>
-          <p>Whiskovery is a local-first personal whisky journal. An account is not required: bottles, tastings, photos, and other core journal features continue to work locally and offline. On iPhone, you may optionally use Sign in with Apple and choose to back up journal records to a private cloud backup.</p>
+          <p>Whiskovery is a local-first personal whisky journal. An account is not required: bottles, tastings, photos, and other core journal features continue to work locally and offline. You may optionally use Sign in with Apple on iPhone or Sign in with Google on Android and choose to back up journal records to a private cloud backup.</p>
         </section>
 
         <section aria-labelledby="en-local-data">
@@ -63,7 +63,7 @@
 
         <section aria-labelledby="en-cloud">
           <h3 id="en-cloud">3. Optional account and cloud backup</h3>
-          <p>If you choose Sign in with Apple, Firebase Authentication (operated by Google for Whiskovery) processes an Apple user identifier and, only if you share it, your email address, which may be an Apple private-relay address. No account is required for normal use.</p>
+          <p>If you choose Sign in with Apple on iPhone or Sign in with Google on Android, Firebase Authentication (operated by Google for Whiskovery) processes the selected provider's user identifier and your email address when it is provided. An Apple email may be a private-relay address. No account is required for normal use, and Whiskovery does not silently link Apple and Google accounts by email.</p>
           <p>Cloud backup happens only after you tap Back Up Now. Whiskovery then stores a private, account-linked copy of journal records in Google Cloud Firestore, including Bottle and Whisky data, purchase details, Tastings and free-form notes, Buy List records, and saved coordinates. Bottle photos are not uploaded and remain only on the device. Whiskovery keeps the newest three committed cloud backup versions per account.</p>
           <p>Cloud restore validates the backup first, creates a local safety backup when needed, and adds only missing records; it does not overwrite existing local records. A restored record that referred to a local photo may appear without that photo on another device.</p>
         </section>
@@ -95,12 +95,12 @@
 
         <section aria-labelledby="en-deletion">
           <h3 id="en-deletion">9. Data deletion</h3>
-          <p>You can delete supported individual records in the app. Delete Local Device Data removes app-managed records, photos, drafts, preferences, and local backup files from that device; it does not delete a cloud account. Delete Cloud Account deletes the Firebase account and its cloud backups and requests revocation of the Apple sign-in connection; it keeps local device data. Copies you exported outside Whiskovery must be deleted at the destination where you saved them. Uninstalling the app generally removes app-local data, subject to operating-system backup behavior.</p>
+          <p>You can delete supported individual records in the app. Delete Local Device Data removes app-managed records, photos, drafts, preferences, and local backup files from that device; it does not delete a cloud account. Delete Cloud Account deletes the Firebase account and its cloud backups and requests revocation of the Apple or Google sign-in connection; it keeps local device data. If you cannot access the app, use the <a href="../support/#delete-account">account-deletion request instructions</a>. Copies you exported outside Whiskovery must be deleted at the destination where you saved them. Uninstalling the app generally removes app-local data, subject to operating-system backup behavior.</p>
         </section>
 
         <section aria-labelledby="en-providers">
           <h3 id="en-providers">10. Service providers and platform services</h3>
-          <p>Optional cloud account and backup use Apple Sign in with Apple and Google Firebase Authentication/Cloud Firestore. Optional currency lookup uses Frankfurter. Optional place suggestions use platform geocoding. App distribution and operating-system backup or diagnostics may be handled separately by Apple under its terms and settings.</p>
+          <p>Optional cloud account and backup use Apple Sign in with Apple on iPhone, Google Sign-In on Android, and Google Firebase Authentication/Cloud Firestore. Optional currency lookup uses Frankfurter. Optional place suggestions use platform geocoding. App distribution and operating-system backup or diagnostics may be handled separately by Apple or Google under their terms and settings.</p>
           <p>Depending on where you use the app and where these providers operate their infrastructure, information processed by Apple, Google Firebase, Frankfurter, or platform services may be processed in countries other than your country of residence, subject to each provider's terms and applicable safeguards.</p>
         </section>
 
@@ -123,7 +123,7 @@
 
         <section aria-labelledby="ko-overview">
           <h3 id="ko-overview">1. 개요</h3>
-          <p>Whiskovery는 로컬 우선 방식의 개인 위스키 저널입니다. 계정은 필수가 아니며, 병·시음·사진을 포함한 핵심 저널 기능은 기기에서 로컬로 작동하고 오프라인에서도 사용할 수 있습니다. iPhone에서는 선택적으로 Apple로 로그인하고 저널 기록을 비공개 클라우드 백업에 저장할 수 있습니다.</p>
+          <p>Whiskovery는 로컬 우선 방식의 개인 위스키 저널입니다. 계정은 필수가 아니며, 병·시음·사진을 포함한 핵심 저널 기능은 기기에서 로컬로 작동하고 오프라인에서도 사용할 수 있습니다. iPhone에서는 Apple로, Android에서는 Google로 선택적으로 로그인하고 저널 기록을 비공개 클라우드 백업에 저장할 수 있습니다.</p>
         </section>
 
         <section aria-labelledby="ko-local-data">
@@ -141,7 +141,7 @@
 
         <section aria-labelledby="ko-cloud">
           <h3 id="ko-cloud">3. 선택적 계정 및 클라우드 백업</h3>
-          <p>사용자가 Apple로 로그인을 선택하면 Whiskovery를 위해 Google이 운영하는 Firebase Authentication이 Apple 사용자 식별자와, 사용자가 공유한 경우에만 이메일 주소(Apple 비공개 릴레이 주소일 수 있음)를 처리합니다. 일반적인 앱 사용에는 계정이 필요하지 않습니다.</p>
+          <p>사용자가 iPhone에서 Apple 로그인 또는 Android에서 Google 로그인을 선택하면 Whiskovery를 위해 Google이 운영하는 Firebase Authentication이 선택한 제공자의 사용자 식별자와 제공되는 경우 이메일 주소를 처리합니다. Apple 이메일은 비공개 릴레이 주소일 수 있습니다. 일반적인 앱 사용에는 계정이 필요하지 않으며 Whiskovery는 이메일 일치만으로 Apple 계정과 Google 계정을 자동 연결하지 않습니다.</p>
           <p>클라우드 백업은 사용자가 지금 백업을 누른 경우에만 실행됩니다. 이때 병·위스키 정보, 구매 정보, 자유 형식 메모를 포함한 시음 기록, 구매 목록 및 저장된 좌표 등 저널 기록의 사본이 계정에 연결된 비공개 Google Cloud Firestore 백업에 저장됩니다. 병 사진은 업로드되지 않고 기기에만 남습니다. 계정별로 가장 최근에 완료된 클라우드 백업 3개를 보관합니다.</p>
           <p>클라우드 복원은 먼저 백업을 검증하고, 필요한 경우 로컬 안전 백업을 만든 다음 없는 기록만 추가합니다. 기존 로컬 기록을 덮어쓰지 않습니다. 로컬 사진을 참조하던 기록은 다른 기기에서 사진 없이 표시될 수 있습니다.</p>
         </section>
@@ -173,12 +173,12 @@
 
         <section aria-labelledby="ko-deletion">
           <h3 id="ko-deletion">9. 데이터 삭제</h3>
-          <p>앱에서 삭제를 지원하는 개별 기록을 삭제할 수 있습니다. 로컬 기기 데이터 삭제는 해당 기기의 앱 관리 기록, 사진, 임시 저장 내용, 설정 및 로컬 백업 파일을 삭제하지만 클라우드 계정은 삭제하지 않습니다. 클라우드 계정 삭제는 Firebase 계정과 클라우드 백업을 삭제하고 Apple 로그인 연결 해제를 요청하지만 기기의 로컬 데이터는 유지합니다. Whiskovery 밖으로 내보낸 사본은 저장한 위치에서 사용자가 직접 삭제해야 합니다. 앱을 삭제하면 일반적으로 로컬 앱 데이터도 삭제되지만 운영체제 백업 방식에 따라 달라질 수 있습니다.</p>
+          <p>앱에서 삭제를 지원하는 개별 기록을 삭제할 수 있습니다. 로컬 기기 데이터 삭제는 해당 기기의 앱 관리 기록, 사진, 임시 저장 내용, 설정 및 로컬 백업 파일을 삭제하지만 클라우드 계정은 삭제하지 않습니다. 클라우드 계정 삭제는 Firebase 계정과 클라우드 백업을 삭제하고 Apple 또는 Google 로그인 연결 해제를 요청하지만 기기의 로컬 데이터는 유지합니다. 앱을 사용할 수 없다면 <a href="../support/#delete-account-ko">계정 삭제 요청 안내</a>를 이용할 수 있습니다. Whiskovery 밖으로 내보낸 사본은 저장한 위치에서 사용자가 직접 삭제해야 합니다. 앱을 삭제하면 일반적으로 로컬 앱 데이터도 삭제되지만 운영체제 백업 방식에 따라 달라질 수 있습니다.</p>
         </section>
 
         <section aria-labelledby="ko-providers">
           <h3 id="ko-providers">10. 서비스 제공자 및 플랫폼 서비스</h3>
-          <p>선택적 클라우드 계정과 백업에는 Apple로 로그인 및 Google Firebase Authentication/Cloud Firestore를 사용합니다. 선택적 환율 조회에는 Frankfurter를 사용하고, 선택적 장소 추천에는 플랫폼 지오코딩을 사용합니다. 앱 배포와 운영체제 백업 또는 진단은 Apple이 별도의 약관과 설정에 따라 처리할 수 있습니다.</p>
+          <p>선택적 클라우드 계정과 백업에는 iPhone의 Apple로 로그인, Android의 Google 로그인 및 Google Firebase Authentication/Cloud Firestore를 사용합니다. 선택적 환율 조회에는 Frankfurter를 사용하고, 선택적 장소 추천에는 플랫폼 지오코딩을 사용합니다. 앱 배포와 운영체제 백업 또는 진단은 Apple 또는 Google이 별도의 약관과 설정에 따라 처리할 수 있습니다.</p>
           <p>사용자의 앱 이용 지역과 각 제공자의 인프라 운영 지역에 따라 Apple, Google Firebase, Frankfurter 또는 플랫폼 서비스가 처리하는 정보는 사용자의 거주 국가 외 지역에서 처리될 수 있으며, 각 제공자의 약관과 적용 가능한 보호조치가 적용됩니다.</p>
         </section>
 
