@@ -73,3 +73,9 @@ the beta links all use `https://whiskoveryapp.com/`. Keep new self-references on
 `https://`. The beta guide's copy-link button reads the canonical URL. The
 Google Form's confirmation message also links to the beta guide; it is edited
 in the Forms editor, not in this repository.
+
+## iOS download
+
+The shared navigation and homepage download buttons link directly to the public
+App Store listing: https://apps.apple.com/us/app/whiskovery/id6820405748.
+Android beta links continue to use the existing tester guide.
