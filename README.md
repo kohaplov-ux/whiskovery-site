@@ -36,14 +36,15 @@ embedded in the guide.
 
 ## Beta applications
 
-The `/beta/#apply` section embeds a Google Form that collects only the applicant's
-Google Play account email and required consent. Responses go to a private Google
-Sheet owned by the connected Google account. New-response email notifications
-are enabled for `siahseong@gmail.com` at the owner's request. The sheet is not
-published or linked from the public site; response summaries stay disabled.
+The `/beta/#apply` section links to a Google Form that opens in a new tab and
+collects only the applicant's Google Play account email and required consent.
+Responses go to a private Google Sheet owned by the form owner's Google account,
+which also receives new-response email notifications. The sheet is not published
+or linked from the public site; response summaries stay disabled. The public
+contact address for Whiskovery, including withdrawal requests, is
+`kohaplov@gmail.com`.
 
-The form's native confirmation is the submission result. A link opens the same
-form in a new tab when an embedded form is unavailable. Applicants still need
+The form's native confirmation is the submission result. Applicants still need
 manual addition to the Play Console tester list before opting into the beta.
 No application records or email service secrets are stored in this repository.
 

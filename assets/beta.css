@@ -308,9 +308,9 @@
 
 .beta-apply-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 3rem;
-  align-items: start;
+  align-items: center;
 }
 
 .beta-apply h2 {
@@ -332,39 +332,69 @@
 
 .beta-application {
   min-width: 0;
-  overflow: hidden;
+  padding: 2.2rem;
   border: var(--border);
   border-radius: var(--radius-lg);
   background: var(--surface-raised);
   box-shadow: var(--shadow-card);
 }
 
-.beta-application-frame {
-  display: block;
-  width: 100%;
-  height: 1030px;
-  border: 0;
-  background: var(--surface-raised);
+.beta-application-title {
+  font-size: 1.35rem;
+  line-height: 1.4;
 }
 
-.beta-form-fallback {
-  padding: 1rem 1.5rem 0.5rem;
+.beta-application-intro {
+  margin-top: 0.4rem;
   color: var(--ink-muted);
-  font-size: 0.9rem;
-  line-height: 1.7;
+  font-size: 0.95rem;
 }
 
-.beta-form-fallback a {
-  display: inline-flex;
+.beta-application-fields {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1.3rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.beta-application-fields li {
+  display: flex;
   align-items: center;
-  min-height: 44px;
-  color: var(--navy);
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-md);
+  background: var(--beige);
+  font-size: 0.95rem;
   font-weight: 700;
-  text-underline-offset: 0.2em;
+  line-height: 1.4;
+}
+
+.beta-application-fields li::before {
+  content: "";
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--amber);
+}
+
+.beta-application-button {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+
+.beta-form-note {
+  margin-top: 0.7rem;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  text-align: center;
 }
 
 .beta-form-privacy {
-  padding: 0 1.5rem 1.5rem;
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: var(--border);
   color: var(--ink-muted);
   font-size: 0.8rem;
   line-height: 1.8;
@@ -840,8 +870,8 @@
     font-size: 0.94rem;
   }
 
-  .beta-application-frame {
-    height: 1210px;
+  .beta-application {
+    padding: 1.5rem;
   }
 
   .beta-section {
