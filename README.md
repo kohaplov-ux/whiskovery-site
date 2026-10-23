@@ -36,8 +36,8 @@ embedded in the guide.
 
 ## Official beta link
 
-The official destination for beta recruitment is **http://whiskoveryapp.com/beta/**
-(switch to `https://` once HTTPS is active; see Custom domain). Use it in
+The official destination for beta recruitment is **https://whiskoveryapp.com/beta/**
+(`http://` redirects there). Use it in
 recruitment messages, campaign materials and anywhere testers are sent to the
 beta guide, instead of the homepage or the old GitHub Pages URL. On the site,
 every beta CTA and the "Android beta" navigation and footer links point to this
@@ -66,15 +66,10 @@ preserves the custom domain. GoDaddy DNS uses the four GitHub Pages A records
 for `@` and `www` points to `kohaplov-ux.github.io`. No nameservers or email DNS
 records were changed. The previous GitHub Pages URLs redirect to the new domain.
 
-HTTPS for the custom domain is pending GitHub's certificate. Until it is issued,
-canonical and `og:` URLs use `http://whiskoveryapp.com/` so links and share
-previews keep working. Once `https://whiskoveryapp.com/` serves a valid
-certificate, enable "Enforce HTTPS" in the Pages settings and switch the URLs:
-
-```bash
-sed -i '' 's#http://whiskoveryapp.com/#https://whiskoveryapp.com/#g' index.html beta/index.html privacy/index.html support/index.html
-```
-
-This also switches the beta links. The beta guide's copy-link button reads the
-canonical URL, so it follows. The Google Form's confirmation message links to
-the beta guide too and is edited in the Forms editor, not in this repository.
+HTTPS is active: GitHub's certificate covers `whiskoveryapp.com` and
+`www.whiskoveryapp.com`, and "Enforce HTTPS" is on, so `http://` requests
+redirect to `https://`. The switch is done: canonical, `og:url`, `og:image` and
+the beta links all use `https://whiskoveryapp.com/`. Keep new self-references on
+`https://`. The beta guide's copy-link button reads the canonical URL. The
+Google Form's confirmation message also links to the beta guide; it is edited
+in the Forms editor, not in this repository.
