@@ -34,6 +34,17 @@ Social previews are 1200×630 JPEGs rendered from SVG sources:
 `og:image` after replacing a JPEG. No analytics or tester contact lists are
 embedded in the guide.
 
+## Official beta link
+
+The official destination for beta recruitment is **http://whiskoveryapp.com/beta/**
+(switch to `https://` once HTTPS is active; see Custom domain). Use it in
+recruitment messages, campaign materials and anywhere testers are sent to the
+beta guide, instead of the homepage or the old GitHub Pages URL. On the site,
+every beta CTA and the "Android beta" navigation and footer links point to this
+absolute URL ("Apply" buttons add `#apply`), and the beta guide's canonical,
+`og:url` and copy-link button use it. The Google Play opt-in URL, the Google
+Forms URL and the Privacy/Support links are separate and stay as they are.
+
 ## Beta applications
 
 The `/beta/#apply` section links to a Google Form that opens in a new tab and
@@ -64,4 +75,6 @@ certificate, enable "Enforce HTTPS" in the Pages settings and switch the URLs:
 sed -i '' 's#http://whiskoveryapp.com/#https://whiskoveryapp.com/#g' index.html beta/index.html privacy/index.html support/index.html
 ```
 
-The beta guide's copy-link button reads the canonical URL, so it follows.
+This also switches the beta links. The beta guide's copy-link button reads the
+canonical URL, so it follows. The Google Form's confirmation message links to
+the beta guide too and is edited in the Forms editor, not in this repository.
