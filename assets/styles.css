@@ -120,10 +120,15 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 1.5rem;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+}
+
+/* Smooth only for in-page clicks; links like /support/#delete-account jump
+   straight to their section on page load. */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1585,7 +1590,7 @@ a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
+  html:focus-within {
     scroll-behavior: auto;
   }
 
