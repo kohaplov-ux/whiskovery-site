@@ -4,122 +4,178 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Bilingual help and contact information for Whiskovery v1.0.">
-    <meta name="theme-color" content="#14243b">
-    <link rel="canonical" href="https://kohaplov-ux.github.io/whiskovery-site/support/">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314243b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23d49a38'%3EW%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="../assets/styles.css">
+    <meta name="theme-color" content="#09213b">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Whiskovery">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:title" content="Whiskovery Support">
+    <meta property="og:description" content="Bilingual help and contact information for Whiskovery v1.0.">
+    <meta property="og:url" content="http://whiskoveryapp.com/support/">
+    <meta property="og:image" content="http://whiskoveryapp.com/assets/whiskovery-share.jpg?v=1">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Whiskovery logo with the tagline Taste. Remember. Discover what you’ll love.">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="http://whiskoveryapp.com/support/">
+    <link rel="icon" type="image/svg+xml" href="../assets/whiskovery-icon.svg">
+    <link rel="stylesheet" href="../assets/styles.css?v=5">
     <title>Support — Whiskovery</title>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header">
+    <header class="site-header on-navy">
       <div class="shell header-inner">
-        <a class="wordmark" href="../" aria-label="Whiskovery home">WHISKOVERY</a>
-        <nav aria-label="Primary navigation">
-          <ul class="nav-list">
-            <li><a href="../">Home</a></li>
-            <li><a href="../privacy/">Privacy</a></li>
+        <a class="brand" href="../" aria-label="Whiskovery home">
+          <span class="brand-mark"><img src="../assets/whiskovery-icon.svg" width="34" height="46" alt=""></span>
+          <span class="brand-name">WHISKOVERY</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
             <li><a href="../support/" aria-current="page">Support</a></li>
+            <li><a href="../privacy/">Privacy</a></li>
+            <li><a class="nav-cta" href="../beta/">Android beta</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main id="main-content" class="document shell">
-      <header class="document-header support-header">
-        <p class="eyebrow">Support · 고객지원</p>
-        <h1>How can we help?</h1>
-        <p>For questions about Whiskovery, contact us by email.</p>
-        <a class="button button-primary" href="mailto:kohaplov@gmail.com">Email Whiskovery Support</a>
-        <p class="contact-address">kohaplov@gmail.com</p>
-        <nav class="language-nav" aria-label="Support languages">
-          <a href="#english">English</a>
-          <a href="#korean" lang="ko">한국어</a>
-        </nav>
+    <main id="main-content">
+      <header class="page-hero support-header">
+        <div class="shell page-hero-inner">
+          <p class="label">Support · <span lang="ko">고객지원</span></p>
+          <h1>How can we help?</h1>
+          <p class="ko-title" lang="ko">무엇을 도와드릴까요?</p>
+          <p class="page-hero-lead">For questions about Whiskovery, contact us by email.</p>
+          <nav class="language-nav" aria-label="Support languages">
+            <a href="#english">English</a>
+            <a href="#korean" lang="ko">한국어</a>
+          </nav>
+        </div>
       </header>
 
-      <section id="english" class="faq-section" lang="en" aria-labelledby="english-title">
-        <div class="language-heading">
-          <p class="section-number" aria-hidden="true">EN</p>
-          <h2 id="english-title">Frequently asked questions</h2>
-        </div>
-        <dl class="faq-list">
-          <div class="faq-item">
-            <dt>Where is my data stored?</dt>
-            <dd>Whiskovery stores the working journal locally on your device. You can optionally sign in with Apple on iPhone or Google on Android and back up a private copy of journal records to Firebase.</dd>
+      <div class="shell support-layout">
+        <aside class="support-aside" aria-label="Contact and shortcuts">
+          <div class="contact-card on-navy">
+            <h2>Email support</h2>
+            <p lang="ko">이메일로 문의해 주세요.</p>
+            <a class="button button-amber" href="mailto:kohaplov@gmail.com">Email Whiskovery Support</a>
+            <p class="contact-address">kohaplov@gmail.com</p>
           </div>
-          <div class="faq-item">
-            <dt>Do I need an account?</dt>
-            <dd>No. Whiskovery v1.0 does not require a Whiskovery user account.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>Are my tasting notes and Bottle photos uploaded?</dt>
-            <dd>Photos are never included in Whiskovery cloud or JSON backups and stay on the device. Tasting notes stay local unless you explicitly tap Back Up Now while signed in; then journal records, including notes, are included in your private cloud backup.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>Can I use the app without location permission?</dt>
-            <dd>Yes. Location is optional and is not required for normal app use.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>Why is currency conversion sometimes unavailable?</dt>
-            <dd>Historical conversion uses available European Central Bank reference-rate data through Frankfurter. If an appropriate exact-date quote is unavailable, Whiskovery keeps showing the original recorded currency instead of inventing a conversion.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>What happens if I delete the app?</dt>
-            <dd>Local app data may be removed, subject to operating-system backup behavior. Before deleting the app, export a local JSON backup or use the optional account backup. Photos are not included in either backup.</dd>
-          </div>
-          <div class="faq-item" id="delete-account">
-            <dt>How do I delete my cloud account and backup?</dt>
-            <dd>In Whiskovery, open Settings → Account &amp; Cloud Backup → Delete Cloud Account. Confirm with Apple on iPhone or Google on Android. This deletes the Firebase account and every cloud backup while keeping local records and photos on that device. If you cannot access the app, email <a href="mailto:kohaplov@gmail.com?subject=Whiskovery%20cloud%20account%20deletion">Whiskovery Support</a>. We will provide identity-verification and deletion instructions; never email a password or sign-in token.</dd>
-          </div>
-        </dl>
-        <p class="policy-link">For details about data handling, read the <a href="../privacy/">Whiskovery Privacy Policy</a>.</p>
-      </section>
+          <nav class="quick-links" aria-label="Support shortcuts">
+            <h2>Shortcuts</h2>
+            <ul>
+              <li><a href="#delete-account">Delete your cloud account and backup</a></li>
+              <li><a href="#delete-account-ko" lang="ko">클라우드 계정과 백업 삭제</a></li>
+              <li><a href="../privacy/">Privacy Policy</a></li>
+              <li><a href="../beta/" lang="ko">Android 베타 테스트 안내</a></li>
+            </ul>
+          </nav>
+        </aside>
 
-      <section id="korean" class="faq-section" lang="ko" aria-labelledby="korean-title">
-        <div class="language-heading">
-          <p class="section-number" aria-hidden="true">KO</p>
-          <h2 id="korean-title">자주 묻는 질문</h2>
+        <div class="support-content">
+          <section id="english" class="faq-section" lang="en" aria-labelledby="english-title">
+            <div class="language-heading">
+              <p class="language-code" aria-hidden="true">EN</p>
+              <h2 id="english-title">Frequently asked questions</h2>
+            </div>
+            <dl class="faq-list">
+              <div class="faq-item">
+                <dt>Where is my data stored?</dt>
+                <dd>Whiskovery stores the working journal locally on your device. You can optionally sign in with Apple on iPhone or Google on Android and back up a private copy of journal records to Firebase.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>Do I need an account?</dt>
+                <dd>No. Whiskovery v1.0 does not require a Whiskovery user account.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>Are my tasting notes and Bottle photos uploaded?</dt>
+                <dd>Photos are never included in Whiskovery cloud or JSON backups and stay on the device. Tasting notes stay local unless you explicitly tap Back Up Now while signed in; then journal records, including notes, are included in your private cloud backup.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>Can I use the app without location permission?</dt>
+                <dd>Yes. Location is optional and is not required for normal app use.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>Why is currency conversion sometimes unavailable?</dt>
+                <dd>Historical conversion uses available European Central Bank reference-rate data through Frankfurter. If an appropriate exact-date quote is unavailable, Whiskovery keeps showing the original recorded currency instead of inventing a conversion.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>What happens if I delete the app?</dt>
+                <dd>Local app data may be removed, subject to operating-system backup behavior. Before deleting the app, export a local JSON backup or use the optional account backup. Photos are not included in either backup.</dd>
+              </div>
+              <div class="faq-item" id="delete-account">
+                <dt>How do I delete my cloud account and backup?</dt>
+                <dd>In Whiskovery, open Settings → Account &amp; Cloud Backup → Delete Cloud Account. Confirm with Apple on iPhone or Google on Android. This deletes the Firebase account and every cloud backup while keeping local records and photos on that device. If you cannot access the app, email <a href="mailto:kohaplov@gmail.com?subject=Whiskovery%20cloud%20account%20deletion">Whiskovery Support</a>. We will provide identity-verification and deletion instructions; never email a password or sign-in token.</dd>
+              </div>
+            </dl>
+            <p class="policy-link">For details about data handling, read the <a href="../privacy/">Whiskovery Privacy Policy</a>.</p>
+          </section>
+
+          <section id="korean" class="faq-section" lang="ko" aria-labelledby="korean-title">
+            <div class="language-heading">
+              <p class="language-code" aria-hidden="true">KO</p>
+              <h2 id="korean-title">자주 묻는 질문</h2>
+            </div>
+            <dl class="faq-list">
+              <div class="faq-item">
+                <dt>내 데이터는 어디에 저장되나요?</dt>
+                <dd>Whiskovery는 실제로 사용하는 저널을 기기에 로컬로 저장합니다. iPhone에서는 Apple로, Android에서는 Google로 선택적으로 로그인하고 저널 기록의 비공개 사본을 Firebase에 백업할 수 있습니다.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>계정이 필요한가요?</dt>
+                <dd>아니요. Whiskovery v1.0은 Whiskovery 사용자 계정을 요구하지 않습니다.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>내 테이스팅 노트와 보틀 사진이 업로드되나요?</dt>
+                <dd>사진은 Whiskovery 클라우드 백업과 JSON 백업에 포함되지 않고 기기에만 남습니다. 테이스팅 노트는 로컬에 저장되며, 로그인한 상태에서 사용자가 지금 백업을 명시적으로 누른 경우에만 노트를 포함한 저널 기록이 비공개 클라우드 백업에 포함됩니다.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>위치 권한 없이 앱을 사용할 수 있나요?</dt>
+                <dd>네. 위치 기능은 선택 사항이며 일반적인 앱 사용에 필요하지 않습니다.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>통화 변환을 사용할 수 없을 때가 있는 이유는 무엇인가요?</dt>
+                <dd>과거 환율 변환은 Frankfurter를 통해 제공되는 유럽중앙은행(ECB) 기준 환율 데이터를 사용합니다. 적절한 날짜의 정확한 환율이 없으면 임의의 환율을 만들지 않고 기록된 원래 통화를 계속 표시합니다.</dd>
+              </div>
+              <div class="faq-item">
+                <dt>앱을 삭제하면 어떻게 되나요?</dt>
+                <dd>운영체제 백업 방식에 따라 로컬 앱 데이터가 삭제될 수 있습니다. 앱을 삭제하기 전에 로컬 JSON 백업을 내보내거나 선택적 계정 백업을 사용하세요. 사진은 두 백업 모두에 포함되지 않습니다.</dd>
+              </div>
+              <div class="faq-item" id="delete-account-ko">
+                <dt>클라우드 계정과 백업은 어떻게 삭제하나요?</dt>
+                <dd>Whiskovery에서 설정 → 계정 및 클라우드 백업 → 클라우드 계정 삭제를 여세요. iPhone에서는 Apple로, Android에서는 Google로 확인합니다. Firebase 계정과 모든 클라우드 백업은 삭제되고 해당 기기의 로컬 기록과 사진은 유지됩니다. 앱을 사용할 수 없다면 <a href="mailto:kohaplov@gmail.com?subject=Whiskovery%20클라우드%20계정%20삭제">Whiskovery 고객지원</a>으로 문의하세요. 본인 확인 및 삭제 절차를 안내하며, 비밀번호나 로그인 토큰은 이메일로 보내지 마세요.</dd>
+              </div>
+            </dl>
+            <p class="policy-link">데이터 처리에 관한 자세한 내용은 <a href="../privacy/">Whiskovery 개인정보 처리방침</a>을 확인해 주세요.</p>
+          </section>
         </div>
-        <dl class="faq-list">
-          <div class="faq-item">
-            <dt>내 데이터는 어디에 저장되나요?</dt>
-            <dd>Whiskovery는 실제로 사용하는 저널을 기기에 로컬로 저장합니다. iPhone에서는 Apple로, Android에서는 Google로 선택적으로 로그인하고 저널 기록의 비공개 사본을 Firebase에 백업할 수 있습니다.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>계정이 필요한가요?</dt>
-            <dd>아니요. Whiskovery v1.0은 Whiskovery 사용자 계정을 요구하지 않습니다.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>내 테이스팅 노트와 보틀 사진이 업로드되나요?</dt>
-            <dd>사진은 Whiskovery 클라우드 백업과 JSON 백업에 포함되지 않고 기기에만 남습니다. 테이스팅 노트는 로컬에 저장되며, 로그인한 상태에서 사용자가 지금 백업을 명시적으로 누른 경우에만 노트를 포함한 저널 기록이 비공개 클라우드 백업에 포함됩니다.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>위치 권한 없이 앱을 사용할 수 있나요?</dt>
-            <dd>네. 위치 기능은 선택 사항이며 일반적인 앱 사용에 필요하지 않습니다.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>통화 변환을 사용할 수 없을 때가 있는 이유는 무엇인가요?</dt>
-            <dd>과거 환율 변환은 Frankfurter를 통해 제공되는 유럽중앙은행(ECB) 기준 환율 데이터를 사용합니다. 적절한 날짜의 정확한 환율이 없으면 임의의 환율을 만들지 않고 기록된 원래 통화를 계속 표시합니다.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>앱을 삭제하면 어떻게 되나요?</dt>
-            <dd>운영체제 백업 방식에 따라 로컬 앱 데이터가 삭제될 수 있습니다. 앱을 삭제하기 전에 로컬 JSON 백업을 내보내거나 선택적 계정 백업을 사용하세요. 사진은 두 백업 모두에 포함되지 않습니다.</dd>
-          </div>
-          <div class="faq-item" id="delete-account-ko">
-            <dt>클라우드 계정과 백업은 어떻게 삭제하나요?</dt>
-            <dd>Whiskovery에서 설정 → 계정 및 클라우드 백업 → 클라우드 계정 삭제를 여세요. iPhone에서는 Apple로, Android에서는 Google로 확인합니다. Firebase 계정과 모든 클라우드 백업은 삭제되고 해당 기기의 로컬 기록과 사진은 유지됩니다. 앱을 사용할 수 없다면 <a href="mailto:kohaplov@gmail.com?subject=Whiskovery%20클라우드%20계정%20삭제">Whiskovery 고객지원</a>으로 문의하세요. 본인 확인 및 삭제 절차를 안내하며, 비밀번호나 로그인 토큰은 이메일로 보내지 마세요.</dd>
-          </div>
-        </dl>
-        <p class="policy-link">데이터 처리에 관한 자세한 내용은 <a href="../privacy/">Whiskovery 개인정보 처리방침</a>을 확인해 주세요.</p>
-      </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <div class="shell footer-inner">
-        <p>© 2026 Whiskovery</p>
-        <p>Support: <a href="mailto:kohaplov@gmail.com">kohaplov@gmail.com</a></p>
+    <footer class="site-footer on-navy">
+      <div class="shell">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="brand" href="../" aria-label="Whiskovery home">
+              <span class="brand-mark"><img src="../assets/whiskovery-icon.svg" width="34" height="46" alt=""></span>
+              <span class="brand-name">WHISKOVERY</span>
+            </a>
+            <p class="tagline">TASTE. REMEMBER. DISCOVER WHAT YOU’LL LOVE.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Footer">
+            <ul>
+              <li><a href="../beta/">Android beta guide</a></li>
+              <li><a href="../support/">Support</a></li>
+              <li><a href="../privacy/">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Whiskovery</p>
+          <p>Support: <a href="mailto:kohaplov@gmail.com">kohaplov@gmail.com</a></p>
+        </div>
       </div>
     </footer>
   </body>

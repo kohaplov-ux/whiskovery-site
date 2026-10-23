@@ -3,41 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#102c49">
+    <meta name="theme-color" content="#09213b">
     <meta name="description" content="Whiskovery Android 클로즈드 베타에 함께해 주세요. 테스트 참여·설치 방법, 14일 참여 안내, 피드백과 무료 클라우드 백업 안내를 한곳에서 확인하세요.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:site_name" content="Whiskovery">
     <meta property="og:title" content="Whiskovery 🥃 클로즈드 베타 테스트 안내">
     <meta property="og:description" content="나만의 위스키 컬렉션과 시음의 기억. Whiskovery Android 베타를 함께 완성해 주세요. 참여 방법부터 피드백·백업 안내까지.">
-    <meta property="og:url" content="https://kohaplov-ux.github.io/whiskovery-site/beta/">
-    <meta property="og:image" content="https://kohaplov-ux.github.io/whiskovery-site/assets/beta-share.jpg?v=2">
+    <meta property="og:url" content="http://whiskoveryapp.com/beta/">
+    <meta property="og:image" content="http://whiskoveryapp.com/assets/beta-share.jpg?v=3">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Whiskovery Android 클로즈드 베타 테스터 참여 가이드">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://kohaplov-ux.github.io/whiskovery-site/beta/">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102c49'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23f6a428'%3EW%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="stylesheet" href="../assets/beta.css">
-    <script src="../assets/beta.js" defer></script>
+    <link rel="canonical" href="http://whiskoveryapp.com/beta/">
+    <link rel="icon" type="image/svg+xml" href="../assets/whiskovery-icon.svg">
+    <link rel="stylesheet" href="../assets/styles.css?v=5">
+    <link rel="stylesheet" href="../assets/beta.css?v=5">
+    <script src="../assets/beta.js?v=5" defer></script>
     <title>클로즈드 베타 테스트 안내 — Whiskovery</title>
   </head>
   <body class="beta-page">
     <a class="skip-link" href="#main-content">본문 바로가기</a>
-    <header class="beta-header">
-      <div class="beta-shell beta-header-inner">
-        <a class="beta-wordmark" href="../" aria-label="Whiskovery 홈페이지">WHISKOVERY<span aria-hidden="true">.</span></a>
-        <nav aria-label="안내 페이지 메뉴">
-          <a href="#how-to-join">참여 방법</a>
-          <a href="#feedback">피드백</a>
-          <a href="#backup">백업 안내</a>
+    <header class="site-header on-navy">
+      <div class="shell header-inner">
+        <a class="brand" href="../" aria-label="Whiskovery 홈페이지">
+          <span class="brand-mark"><img src="../assets/whiskovery-icon.svg" width="34" height="46" alt=""></span>
+          <span class="brand-name">WHISKOVERY</span>
+        </a>
+        <nav class="site-nav" aria-label="사이트 메뉴">
+          <ul>
+            <li><a href="../support/">고객지원</a></li>
+            <li><a href="../privacy/">개인정보</a></li>
+            <li><a class="nav-cta" href="../beta/" aria-current="page">Android 베타</a></li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="beta-hero" aria-labelledby="beta-title">
+      <section class="beta-hero on-navy" aria-labelledby="beta-title">
         <div class="beta-shell beta-hero-grid">
           <div class="beta-hero-copy">
             <p class="beta-eyebrow"><span class="beta-live-dot" aria-hidden="true"></span> ANDROID · CLOSED BETA</p>
@@ -49,6 +54,7 @@
               <a class="beta-text-link" href="#how-to-join">참여 방법 알아보기 <span aria-hidden="true">↓</span></a>
             </div>
             <p class="beta-hero-note">테스트 신청 시 등록한 Google 계정으로 참여해 주세요.</p>
+            <a class="beta-apply-link" href="#apply">아직 초대받지 않으셨나요? 참여 신청하기 <span aria-hidden="true">→</span></a>
           </div>
 
           <aside class="beta-invitation" aria-label="테스터에게 드리는 초대">
@@ -63,6 +69,31 @@
       <div class="beta-facts" aria-label="테스트 기본 안내">
         <div class="beta-shell beta-facts-inner"><span><b>Android</b> 클로즈드 베타</span><span><b>등록한 Google 계정</b>으로 참여</span><span><b>14일 이상</b> 참여 상태 유지</span></div>
       </div>
+
+      <nav class="beta-jump" aria-label="안내 페이지 메뉴">
+        <div class="beta-shell beta-jump-inner">
+          <a href="#apply">참여 신청</a>
+          <a href="#how-to-join">참여 방법</a>
+          <a href="#feedback">피드백</a>
+          <a href="#backup">백업 안내</a>
+        </div>
+      </nav>
+
+      <section id="apply" class="beta-apply" aria-labelledby="apply-title">
+        <div class="beta-shell beta-apply-grid">
+          <div class="beta-apply-copy">
+            <p class="beta-eyebrow">BE OUR NEXT TESTER</p>
+            <h2 id="apply-title">베타 테스트 참여를<br>원하시나요?</h2>
+            <p>Google Play에서 사용하는 <strong>Google 계정 이메일</strong>을 보내 주세요.</p>
+            <p>초대 명단에 등록한 뒤 참여 방법을 안내해 드릴게요. 신청만으로 Google Play 테스트 참여가 완료되지는 않아요.</p>
+          </div>
+          <div class="beta-application">
+            <iframe class="beta-application-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSck9A0fuLgOTbY_V9yWtTsFnpQ4_cyh6IiYz5Rt3JFnIlH9iw/viewform?embedded=true" title="Whiskovery 베타 테스트 참여 신청: Google Play 계정 이메일 입력" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">신청 양식을 불러오는 중입니다.</iframe>
+            <p class="beta-form-fallback">양식이 보이지 않으면 <a href="https://docs.google.com/forms/d/e/1FAIpQLSck9A0fuLgOTbY_V9yWtTsFnpQ4_cyh6IiYz5Rt3JFnIlH9iw/viewform" target="_blank" rel="noopener noreferrer">새 창에서 참여 신청하기 <span aria-hidden="true">↗</span></a></p>
+            <p class="beta-form-privacy">신청 내용은 Google 폼을 통해 운영자에게만 전달됩니다. 다른 신청자의 이메일은 공개되지 않습니다.</p>
+          </div>
+        </div>
+      </section>
 
       <section id="how-to-join" class="beta-shell beta-section" aria-labelledby="join-title">
         <div class="beta-section-heading"><p class="beta-eyebrow">HOW TO JOIN</p><h2 id="join-title">시작은 간단해요.</h2><p>아래 다섯 단계만 따라와 주세요.</p></div>
@@ -84,7 +115,7 @@
         </div>
       </section>
 
-      <section id="feedback" class="beta-feedback" aria-labelledby="feedback-title">
+      <section id="feedback" class="beta-feedback on-navy" aria-labelledby="feedback-title">
         <div class="beta-shell beta-feedback-grid">
           <div><p class="beta-eyebrow">EVERY NOTE HELPS</p><h2 id="feedback-title">짧은 의견 하나도<br>큰 도움이 됩니다.</h2><p class="beta-feedback-intro">카카오톡, 인스타그램 DM, 이메일 중<br>편한 곳 어디든 보내 주세요!</p><p>초대해 드린 사람에게 메시지를 보내거나,<br>아래 이메일로 편하게 연락해 주세요.</p><a class="beta-button beta-button-amber" href="mailto:kohaplov@gmail.com?subject=Whiskovery%20%EB%B2%A0%ED%83%80%20%ED%94%BC%EB%93%9C%EB%B0%B1">이메일로 의견 보내기 <span aria-hidden="true">↗</span></a><p class="beta-email"><a href="mailto:kohaplov@gmail.com">kohaplov@gmail.com</a></p></div>
           <div class="beta-feedback-prompts"><p class="beta-prompts-label">어떤 이야기든 환영해요</p><ul><li><span aria-hidden="true">01</span>사용 중 발견한 오류</li><li><span aria-hidden="true">02</span>불편하거나 개선이 필요한 부분</li><li><span aria-hidden="true">03</span>추가되었으면 하는 기능</li><li><span aria-hidden="true">04</span>사용하면서 좋았던 점</li></ul><p>스크린샷 한 장, 짧은 한마디도 좋아요.<br>오류가 생겼다면 어떤 상황이었는지 함께 알려 주세요.</p></div>
@@ -102,6 +133,29 @@
       <section class="beta-thanks" aria-labelledby="thanks-title"><div class="beta-shell"><p class="beta-eyebrow">THANK YOU FOR BEING HERE</p><h2 id="thanks-title">여러분의 피드백이<br>Whiskovery의 다음을 만듭니다.</h2><p>정식 출시 전 테스트 버전이기 때문에 일부 오류가 발생할 수 있습니다.<br>소중한 기록과 원본 사진은 별도로 보관하며 사용해 주세요.</p><p>참여해 주셔서 정말 감사합니다! 🥃</p><a class="beta-button beta-button-amber" href="https://play.google.com/apps/testing/app.whiskovery.mobile">Whiskovery 베타 참여하기 <span aria-hidden="true">↗</span></a><div class="beta-share-row"><button id="copy-guide" type="button">이 안내 페이지 링크 복사 <span aria-hidden="true">⧉</span></button><span id="copy-status" role="status" aria-live="polite"></span></div></div></section>
     </main>
 
-    <footer class="beta-footer"><div class="beta-shell"><a class="beta-wordmark" href="../">WHISKOVERY<span aria-hidden="true">.</span></a><p class="beta-tagline" lang="en">TASTE. REMEMBER. DISCOVER WHAT YOU’LL LOVE.</p><div class="beta-footer-bottom"><p>© 2026 Whiskovery · 성인 테스터를 위한 Android 클로즈드 베타</p><nav aria-label="사이트 정보"><a href="../">홈</a><a href="../privacy/">개인정보 처리방침</a><a href="../support/">고객지원</a></nav></div></div></footer>
+    <footer class="site-footer on-navy">
+      <div class="shell">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="brand" href="../" aria-label="Whiskovery 홈페이지">
+              <span class="brand-mark"><img src="../assets/whiskovery-icon.svg" width="34" height="46" alt=""></span>
+              <span class="brand-name">WHISKOVERY</span>
+            </a>
+            <p class="tagline" lang="en">TASTE. REMEMBER. DISCOVER WHAT YOU’LL LOVE.</p>
+          </div>
+          <nav class="footer-nav" aria-label="사이트 정보">
+            <ul>
+              <li><a href="../">홈</a></li>
+              <li><a href="../support/">고객지원</a></li>
+              <li><a href="../privacy/">개인정보 처리방침</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Whiskovery · 성인 테스터를 위한 Android 클로즈드 베타</p>
+          <p>문의: <a href="mailto:kohaplov@gmail.com">kohaplov@gmail.com</a></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

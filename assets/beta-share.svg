@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#102c49"/>
+  <rect width="1200" height="630" fill="#0f2a4a"/>
   <circle cx="1140" cy="65" r="360" fill="none" stroke="#ffffff" stroke-opacity=".06"/>
   <circle cx="1140" cy="65" r="450" fill="none" stroke="#ffffff" stroke-opacity=".04"/>
-  <rect x="76" y="75" width="7" height="44" fill="#f6a428"/>
-  <g font-family="-apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
-    <text x="104" y="106" font-size="30" font-weight="800" letter-spacing="3" fill="#fcf8f1">WHISKOVERY</text>
-    <text x="78" y="173" font-size="19" font-weight="700" letter-spacing="3" fill="#f6a428">ANDROID · CLOSED BETA</text>
-    <text x="74" y="285" font-size="66" font-weight="800" letter-spacing="-2" fill="#fcf8f1">베타 테스터</text>
-    <text x="74" y="373" font-size="66" font-weight="800" letter-spacing="-2" fill="#fcf8f1">참여 가이드</text>
-    <text x="78" y="446" font-size="25" fill="#c7d2de">나만의 위스키와 시음의 기억, 함께 완성해요.</text>
-    <rect x="78" y="500" width="377" height="58" rx="9" fill="#f6a428"/>
-    <text x="104" y="538" font-size="23" font-weight="800" fill="#102c49">참여 방법 · 피드백 · 백업 안내</text>
+  <rect x="76" y="75" width="7" height="44" fill="#ef9d30"/>
+  <g font-family="'Whiskovery Sans KR', sans-serif">
+    <text x="104" y="106" font-family="Manrope, sans-serif" font-size="30" font-weight="800" letter-spacing="3" fill="#fcf4e3">WHISKOVERY</text>
+    <text x="78" y="173" font-family="Manrope, sans-serif" font-size="19" font-weight="700" letter-spacing="3" fill="#ef9d30">ANDROID · CLOSED BETA</text>
+    <text x="74" y="285" font-size="66" font-weight="800" letter-spacing="-2" fill="#fcf4e3">베타 테스터</text>
+    <text x="74" y="373" font-size="66" font-weight="800" letter-spacing="-2" fill="#fcf4e3">참여 가이드</text>
+    <text x="78" y="446" font-size="25" fill="#cad5de">나만의 위스키와 시음의 기억, 함께 완성해요.</text>
+    <rect x="78" y="500" width="316" height="58" rx="29" fill="#ef9d30"/>
+    <text x="104" y="538" font-size="23" font-weight="800" fill="#0f2a4a">참여 방법 · 피드백 · 백업 안내</text>
   </g>
   <g transform="translate(828 173) rotate(8 112 147)">
-    <rect width="225" height="296" rx="20" fill="#f9f1e1"/>
+    <rect width="225" height="296" rx="20" fill="#fcf4e3"/>
     <svg x="61.5" y="42" width="102" height="138.25" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339.52 460.2">
       <defs>
         <style>
@@ -52,8 +52,8 @@
         </g>
       </g>
     </svg>
-    <path d="M20 208h185" stroke="#102c49" stroke-opacity=".3" stroke-dasharray="4 5"/>
-    <text x="25" y="264" fill="#102c49" font-family="Arial, sans-serif" font-size="40" font-weight="800">14</text>
-    <text x="82" y="264" fill="#102c49" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">DAYS</text>
+    <path d="M20 208h185" stroke="#0f2a4a" stroke-opacity=".3" stroke-dasharray="4 5"/>
+    <text x="25" y="264" fill="#0f2a4a" font-family="Manrope, sans-serif" font-size="40" font-weight="800">14</text>
+    <text x="82" y="264" fill="#0f2a4a" font-family="Manrope, sans-serif" font-size="16" font-weight="700" letter-spacing="2">DAYS</text>
   </g>
 </svg>

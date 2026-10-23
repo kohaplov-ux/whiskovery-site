@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f2a4a"/>
+  <circle cx="1120" cy="40" r="380" fill="none" stroke="#fcf4e3" stroke-opacity=".06"/>
+  <circle cx="1120" cy="40" r="470" fill="none" stroke="#fcf4e3" stroke-opacity=".04"/>
+  <g transform="translate(76 78)">
+    <rect width="54" height="54" rx="14" fill="#fcf4e3"/>
+    <svg x="13" y="9" width="28" height="38" viewBox="0 0 339.52 460.2">
+      <path d="M26.81,328.2l67.5,60.3-26.4,63.4h103.6v-.2h100l-26.4-63.4,67.5-60.3c11.7-10.5,18.5-25.3,18.9-41L299.51,8h-131.5v.2H40.01L8.01,287.2c.3,15.7,7.1,30.5,18.8,41Z" fill="#fcf4e3" stroke="#0f2a4a" stroke-linecap="square" stroke-width="16" stroke-miterlimit="10"/>
+      <line x1="320.11" y1="452.2" x2="17.91" y2="452.2" fill="#fcf4e3" stroke="#0f2a4a" stroke-linecap="square" stroke-linejoin="round" stroke-width="16"/>
+      <polygon points="40.41 202 298.41 202 307.71 283.8 31.81 283.8 40.41 202" fill="#ef9d30"/>
+      <path d="M169.81,283.8H31.91s1.1,10.3,4.3,16.1c3.1,5.5,4.6,7.2,11.4,14.1,7.7,7.8,80.3,71.4,80.3,71.4l41.9.4,41.9-.4s72.6-63.6,80.3-71.4c6.8-6.9,8.3-8.5,11.4-14.1,3.2-5.7,4.3-16.1,4.3-16.1h-137.9Z" fill="#a65a21"/>
+    </svg>
+    <text x="74" y="37" font-family="Manrope, 'Whiskovery Sans KR', sans-serif" font-size="26" font-weight="700" letter-spacing="4.5" fill="#fcf4e3">WHISKOVERY</text>
+  </g>
+  <g font-family="Manrope, 'Whiskovery Sans KR', sans-serif" font-weight="700" fill="#fcf4e3">
+    <text x="74" y="272" font-size="76" letter-spacing="-3">Taste<tspan fill="#ef9d30">.</tspan> Remember<tspan fill="#ef9d30">.</tspan></text>
+    <text x="74" y="356" font-size="76" letter-spacing="-3">Discover what</text>
+    <text x="74" y="440" font-size="76" letter-spacing="-3">you’ll love<tspan fill="#ef9d30">.</tspan></text>
+  </g>
+  <text x="76" y="520" font-family="'Whiskovery Sans KR', sans-serif" font-size="26" fill="#cad5de">나만의 위스키 셀러와 시음 기록</text>
+  <text x="76" y="562" font-family="Manrope, sans-serif" font-size="22" font-weight="600" fill="#ef9d30">whiskoveryapp.com</text>
+  <g transform="translate(838 150) rotate(-3 128 170)">
+    <rect width="256" height="340" rx="32" fill="#fcf4e3"/>
+    <svg x="70" y="52" width="116" height="157" viewBox="0 0 339.52 460.2">
+      <path d="M26.81,328.2l67.5,60.3-26.4,63.4h103.6v-.2h100l-26.4-63.4,67.5-60.3c11.7-10.5,18.5-25.3,18.9-41L299.51,8h-131.5v.2H40.01L8.01,287.2c.3,15.7,7.1,30.5,18.8,41Z" fill="#fcf4e3" stroke="#0f2a4a" stroke-linecap="square" stroke-width="16" stroke-miterlimit="10"/>
+      <line x1="320.11" y1="452.2" x2="17.91" y2="452.2" fill="#fcf4e3" stroke="#0f2a4a" stroke-linecap="square" stroke-linejoin="round" stroke-width="16"/>
+      <polygon points="40.41 202 298.41 202 307.71 283.8 31.81 283.8 40.41 202" fill="#ef9d30"/>
+      <path d="M169.81,283.8H31.91s1.1,10.3,4.3,16.1c3.1,5.5,4.6,7.2,11.4,14.1,7.7,7.8,80.3,71.4,80.3,71.4l41.9.4,41.9-.4s72.6-63.6,80.3-71.4c6.8-6.9,8.3-8.5,11.4-14.1,3.2-5.7,4.3-16.1,4.3-16.1h-137.9Z" fill="#a65a21"/>
+    </svg>
+    <text x="128" y="262" text-anchor="middle" font-family="Manrope, sans-serif" font-size="13" font-weight="700" letter-spacing="2.2" fill="#0f2a4a">TASTE. REMEMBER.</text>
+    <text x="128" y="284" text-anchor="middle" font-family="Manrope, sans-serif" font-size="13" font-weight="700" letter-spacing="2.2" fill="#0f2a4a">DISCOVER WHAT YOU’LL LOVE.</text>
+  </g>
+  <g font-family="Manrope, 'Whiskovery Sans KR', sans-serif" font-size="19" font-weight="700">
+    <g transform="translate(782 198) rotate(-6)"><rect width="128" height="44" rx="22" fill="#fdf9f1"/><text x="22" y="29" fill="#0f2a4a">Nose <tspan font-family="'Whiskovery Sans KR', sans-serif" font-weight="400" fill="#56646f">향</tspan></text></g>
+    <g transform="translate(1030 330) rotate(4)"><rect width="134" height="44" rx="22" fill="#ef9d30"/><text x="22" y="29" fill="#0f2a4a">Palate <tspan font-family="'Whiskovery Sans KR', sans-serif" font-weight="400">맛</tspan></text></g>
+    <g transform="translate(800 470) rotate(-3)"><rect width="160" height="44" rx="22" fill="#f5ebd7"/><text x="22" y="29" fill="#0f2a4a">Finish <tspan font-family="'Whiskovery Sans KR', sans-serif" font-weight="400" fill="#56646f">피니시</tspan></text></g>
+  </g>
+</svg>

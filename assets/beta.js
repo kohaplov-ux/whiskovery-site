@@ -3,7 +3,8 @@ const copyStatus = document.querySelector('#copy-status');
 
 if (copyButton && copyStatus) {
   copyButton.addEventListener('click', async () => {
-    const guideUrl = 'https://kohaplov-ux.github.io/whiskovery-site/beta/';
+    // Share the page's canonical URL so the copied link follows the live domain.
+    const guideUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href.split('#')[0];
     try {
       await navigator.clipboard.writeText(guideUrl);
       copyStatus.textContent = '링크를 복사했어요. 편한 채널로 공유해 주세요!';
